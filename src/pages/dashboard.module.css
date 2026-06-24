@@ -1,0 +1,20 @@
+.intro {
+  max-width: 48rem;
+  margin-bottom: 2rem;
+}
+
+.intro p {
+  color: var(--ifm-color-content-secondary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+/* The address lookup spans the full row on wider viewports. */
+.wide {
+  grid-column: 1 / -1;
+}
