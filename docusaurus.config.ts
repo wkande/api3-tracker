@@ -107,7 +107,7 @@ const config: Config = {
         {
           title: "More",
           items: [
-            { label: "API3 DAO Docs", href: "https://dao-docs.api3.org/" },
+            { label: "Api3 DAO Docs", href: "https://dao-docs.api3.org/" },
             {
               label: "GitHub",
               href: "https://github.com/api3dao/api3-tracker",
