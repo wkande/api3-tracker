@@ -49,16 +49,6 @@
   opacity: 0.6;
 }
 
-.spinning {
-  animation: spin 0.9s linear infinite;
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .statRow {
   display: flex;
   align-items: baseline;

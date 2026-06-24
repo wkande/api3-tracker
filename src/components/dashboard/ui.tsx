@@ -4,8 +4,7 @@
  * (alongside the cards) so every card renders loading / error / refresh
  * consistently per the spec.
  */
-import type { ReactNode } from 'react';
-import clsx from 'clsx';
+import { useRef, type ReactNode } from 'react';
 import styles from './ui.module.css';
 
 export function Card({
@@ -19,6 +18,19 @@ export function Card({
   refreshing?: boolean;
   children: ReactNode;
 }) {
+  const iconRef = useRef<HTMLSpanElement>(null);
+
+  function handleRefresh() {
+    // Spin the icon exactly one revolution per click, independent of how long the
+    // fetch takes (the refresh is usually near-instant). Using the Web Animations
+    // API lets rapid clicks restart the rotation cleanly.
+    iconRef.current?.animate(
+      [{ transform: 'rotate(0deg)' }, { transform: 'rotate(360deg)' }],
+      { duration: 600, easing: 'ease-in-out' },
+    );
+    onRefresh?.();
+  }
+
   return (
     <section className={styles.card}>
       <header className={styles.cardHeader}>
@@ -27,12 +39,12 @@ export function Card({
           <button
             type="button"
             className={styles.refreshButton}
-            onClick={onRefresh}
+            onClick={handleRefresh}
             disabled={refreshing}
             aria-label={`Refresh ${title}`}
             title="Refresh"
           >
-            <span className={clsx(refreshing && styles.spinning)} aria-hidden>
+            <span ref={iconRef} aria-hidden>
               ↻
             </span>
           </button>
