@@ -1,16 +1,16 @@
-import type {ReactNode} from 'react';
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import Heading from '@theme/Heading';
+import type { ReactNode } from "react";
+import clsx from "clsx";
+import Link from "@docusaurus/Link";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import Layout from "@theme/Layout";
+import Heading from "@theme/Heading";
 
-import styles from './index.module.css';
+import styles from "./index.module.css";
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className={clsx("hero hero--primary", styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
@@ -23,7 +23,8 @@ function HomepageHeader() {
           <Link
             className="button button--outline button--secondary button--lg"
             to="/docs/intro"
-            style={{marginLeft: '0.75rem'}}>
+            style={{ marginLeft: "0.75rem" }}
+          >
             Read the docs
           </Link>
         </div>
@@ -33,19 +34,20 @@ function HomepageHeader() {
 }
 
 export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title={siteConfig.title}
-      description="Documentation and a live on-chain dashboard for the API3 DAO staking pool.">
+      description="Documentation and a live on-chain dashboard for the Api3 DAO staking pool."
+    >
       <HomepageHeader />
       <main className="container margin-vert--xl">
         <div className="row">
           <div className="col col--6 margin-bottom--lg">
             <Heading as="h2">Documentation</Heading>
             <p>
-              Reference for the API3 DAO: governance, staking, rewards, voting and
-              the on-chain contracts behind it all.
+              Reference for the Api3 DAO: governance, staking, rewards, voting
+              and the on-chain contracts behind it all.
             </p>
             <Link to="/docs/intro">Start reading →</Link>
           </div>

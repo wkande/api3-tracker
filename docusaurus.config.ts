@@ -6,7 +6,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
   title: "Api3 DAO Tracker",
-  tagline: "Docs & live on-chain dashboard for the API3 DAO",
+  tagline: "Docs & live on-chain dashboard for the Api3 DAO",
   favicon: "img/favicon.ico",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
