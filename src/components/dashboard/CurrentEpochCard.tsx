@@ -11,9 +11,11 @@ export default function CurrentEpochCard() {
 
   return (
     <Card title="Current epoch" onRefresh={refetch} refreshing={loading}>
-      {error ? (
+      {/* Skeleton/error only on the initial load; keep content mounted on refresh
+          so the card height stays fixed and the page doesn't shift. */}
+      {error && !data ? (
         <ErrorBox error={error} />
-      ) : loading || !data ? (
+      ) : !data ? (
         <SkeletonRows rows={3} />
       ) : (
         <>

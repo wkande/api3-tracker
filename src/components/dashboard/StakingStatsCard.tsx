@@ -21,9 +21,12 @@ export default function StakingStatsCard() {
 
   return (
     <Card title="Staking" onRefresh={refetch} refreshing={loading}>
-      {error ? (
+      {/* Skeleton/error only on the initial load (no data yet). On a refresh we
+          keep the existing content mounted so the card height stays fixed and the
+          page doesn't shift — the spinning refresh icon signals the update. */}
+      {error && !data ? (
         <ErrorBox error={error} />
-      ) : loading || !data ? (
+      ) : !data ? (
         <SkeletonRows rows={4} />
       ) : (
         <>
