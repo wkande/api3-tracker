@@ -83,7 +83,7 @@ const config: Config = {
         },
         { to: "/dashboard", label: "Dashboard", position: "left" },
         {
-          href: "https://github.com/api3dao/api3-tracker",
+          href: "https://github.com/wkande/api3-tracker",
           label: "GitHub",
           position: "right",
         },
@@ -110,7 +110,7 @@ const config: Config = {
             { label: "Api3 DAO Docs", href: "https://dao-docs.api3.org/" },
             {
               label: "GitHub",
-              href: "https://github.com/api3dao/api3-tracker",
+              href: "https://github.com/wkande/api3-tracker",
             },
           ],
         },
