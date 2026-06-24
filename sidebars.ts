@@ -1,28 +1,29 @@
-import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
+import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const sidebars: SidebarsConfig = {
   docsSidebar: [
-    'intro',
-    'governance',
-    'staking',
-    'rewards',
-    'voting',
+    "intro",
+    "prompt",
+    "governance",
+    "staking",
+    "rewards",
+    "voting",
     {
-      type: 'category',
-      label: 'Technical',
+      type: "category",
+      label: "Technical",
       items: [
-        'technical/contracts',
-        'technical/pool',
-        'technical/dashboard-attributes',
-        'technical/distribution',
+        "technical/contracts",
+        "technical/pool",
+        "technical/dashboard-attributes",
+        "technical/distribution",
       ],
     },
     {
-      type: 'link',
-      label: 'Live dashboard',
-      href: '/dashboard',
+      type: "link",
+      label: "Live dashboard",
+      href: "/dashboard",
     },
   ],
 };
