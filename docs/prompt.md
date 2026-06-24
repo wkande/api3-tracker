@@ -7,7 +7,9 @@ slug: /prompt
 
 Following is the Claude Code prompt used to create the project. I was pleased with the quality and simplicity of the code for the React components.
 
-# Project spec: API3 DAO docs + live tracker site (Docusaurus)
+---
+
+# Project spec: Api3 DAO docs + live tracker site (Docusaurus)
 
 ## 1. Summary
 

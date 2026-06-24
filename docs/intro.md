@@ -3,12 +3,12 @@ title: Introduction
 slug: /intro
 ---
 
-# The API3 DAO
+# The Api3 DAO
 
-API3 is a collaborative project delivering traditional API services to
+Api3 is a collaborative project delivering traditional API services to
 smart-contract platforms in a decentralized and trust-minimized way. It is
 governed by a **decentralized autonomous organization (DAO)** — the API3 DAO —
-whose members stake the API3 token to participate in governance and to secure the
+whose members stake the Api3 token to participate in governance and to secure the
 network's data feeds.
 
 This site has two parts:
@@ -19,12 +19,14 @@ This site has two parts:
   **current on-chain state** of the staking pool directly from Ethereum mainnet in
   your browser. No wallet connection is required.
 
-:::info Source & scope
+:::tip[Source & scope]
+
 The documentation here is adapted from the official
 [API3 DAO docs](https://dao-docs.api3.org/). It is a working draft pending review.
 This phase intentionally covers **current** on-chain state only — historical charts
 (APR over time), the full member leaderboard, and the proposal archive are out of
 scope and would require an indexer + database.
+
 :::
 
 ## How the DAO works at a glance
@@ -45,11 +47,11 @@ scope and would require an indexer + database.
 
 ## Where to go next
 
-| If you want to… | Go to |
-|---|---|
-| Understand the DAO's structure & powers | [Governance](/docs/governance) |
-| Stake tokens (member how-to) | [Staking](/docs/staking) |
-| Understand rewards & APR | [Rewards](/docs/rewards) |
-| Understand proposals & votes | [Voting](/docs/voting) |
-| Read the contract reference | [Contracts](/docs/technical/contracts) |
-| See current on-chain numbers | [Live dashboard](/dashboard) |
+| If you want to…                         | Go to                                  |
+| --------------------------------------- | -------------------------------------- |
+| Understand the DAO's structure & powers | [Governance](/docs/governance)         |
+| Stake tokens (member how-to)            | [Staking](/docs/staking)               |
+| Understand rewards & APR                | [Rewards](/docs/rewards)               |
+| Understand proposals & votes            | [Voting](/docs/voting)                 |
+| Read the contract reference             | [Contracts](/docs/technical/contracts) |
+| See current on-chain numbers            | [Live dashboard](/dashboard)           |

@@ -4,7 +4,7 @@ title: Rewards
 
 # Staking rewards
 
-Stakers are rewarded with newly minted API3 each **epoch**. This page explains the
+Stakers are rewarded with newly minted Api3 each **epoch**. This page explains the
 mechanics at a high level; the precise formula lives in
 [Reward distribution](/docs/technical/distribution).
 
